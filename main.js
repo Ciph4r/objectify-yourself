@@ -2,6 +2,44 @@ const myCodeImmersivesObj = {
   objectify: 'me'
 };
 
+myCodeImmersivesObj.objectify = 'yourself'
+myCodeImmersivesObj.isAnExcellentObject = true
+myCodeImmersivesObj.term = 1
+myCodeImmersivesObj.term += 1
+myCodeImmersivesObj.currentScore = 3
+myCodeImmersivesObj.cumulativeScore = 50
+myCodeImmersivesObj.allScore = function(x){
+  this.cumulativeScore += this.currentScore
+}
+myCodeImmersivesObj.allScore()
+myCodeImmersivesObj['I am exactly this cool'] = `soooooo cool`
+
+
+const myInfo = {
+    firstName: 'David',
+    lastName: 'Lau',
+    age: 32,
+    address: [],
+    addAdress: function(a){
+      this.address.push(a)
+    }
+}
+myInfo.addAdress('Brooklyn ,NY')
+myInfo.addAdress('Woodbridge ,NJ')
+myInfo.addAdress('LongIsland ,NY')
+
+const makeInfo = (firstName , lastName , age , height)=>{
+  const info = {}
+  info.firstName = firstName
+  info.lastName = lastName
+  info.age = age 
+  info.height = height
+  return info
+}
+
+const gg = makeInfo('john','doe',44,'6ft')
+
+
 // Set the value of property `objectify` to be "yourself".
 
 
